@@ -1,0 +1,124 @@
+/* App CSS */
+.app__res {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.app__left {
+  /* position: absolute; */
+  flex: 80%;
+  /* max-width: 100%; */
+  overflow-x: hidden;
+}
+.app__right {
+  flex: 20%;
+}
+@media (max-width: 990px) {
+  /* .app-left,
+  .app-right {
+    flex: 100%;
+  } */
+  .app__res {
+    flex-direction: column;
+  }
+}
+
+/* Header Section CSS */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0abeb8;
+
+  height: 150px;
+  padding-left: 10px;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+.header__button > button {
+  background-color: transparent;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  font-size: x-large;
+}
+button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+/* Array Container CSS */
+.arrayContainer {
+  /* background-color: mediumaquamarine;
+
+  height: 70vh; */
+
+  /* flex-direction: ; */
+  margin-top: 5px;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  /* position: relative; */
+}
+
+.arrayContainer__bars {
+  position: relative;
+  width: 5px;
+  background-color: black;
+  display: inline-block;
+  margin: 0 1px;
+}
+
+/* Modifier css */
+
+.modifier {
+  margin-top: 5px;
+}
+.modifier__inputs {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+.Card {
+  margin: 5px;
+}
+.modifier__Card {
+  margin: 5px;
+}
+.modifier__NewArray {
+  display: flex;
+
+  justify-content: center;
+  background-color: #fefbd8;
+}
+.modifier__range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modifier__button {
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+  font-size: x-large;
+  color: black;
+}
+.instructions {
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 990px) {
+  .modifier__inputs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
